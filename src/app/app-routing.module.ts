@@ -6,11 +6,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 
 const routes: Routes = [
-  {path:'',redirectTo : '/departments', pathMatch : 'full'},
-  {path:'departments',component:DepartmentListComponent},
-  {path:'departments/:id',component:DepartmentDetailComponent},  
-  {path:'employees',component:EmployeeListComponent},
-  {path:'**',component:PageNotFoundComponent}
+  {path: '', redirectTo : '/departments', pathMatch : 'full'},
+  {path: 'departments', component: DepartmentListComponent},
+  {path: 'departments/:id', component: DepartmentDetailComponent},
+  {path: 'employees', component: EmployeeListComponent},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
@@ -18,4 +18,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponent = [DepartmentListComponent,EmployeeListComponent,PageNotFoundComponent,DepartmentDetailComponent]
+export const routingComponent = [DepartmentListComponent, EmployeeListComponent, PageNotFoundComponent, DepartmentDetailComponent];
